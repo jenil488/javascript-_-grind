@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Player Cards */
+.card {
+    width: 100px;
+    height: 140px;
+    background-color: #4e73df;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.5s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#user-cards-left, #opponent-cards-left {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-style:initial;
+
+    
+    
+}
+
+.card.winner {
+    background-color: #28a745; /* Green for the winner */
+}
+
+.card.loser {
+    background-color: #dc3545; /* Red for the loser */
+}
+
+#team-result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+}

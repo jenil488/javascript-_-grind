@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game - Flip and Compare</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Card Game - Flip and Compare</h1>
+
+        <!-- Display player cards and cards left -->
+        <div class="players">
+            <div class="player">
+                <h2>Your Card</h2>
+                <div id="user-card" class="card">
+                    <!-- User's card will be displayed here -->
+                </div>
+                <div id="user-cards-left">Cards Left: 10</div>
+            </div>
+
+            <div class="player">
+                <h2>Opponent's Card</h2>
+                <div id="opponent-card" class="card">
+                    <!-- Opponent's card will be displayed here -->
+                </div>
+                <div id="opponent-cards-left">Cards Left: 10</div>
+            </div>
+        </div>
+
+        <button id="playButton">Flip Cards</button>
+        <div id="round-result"></div>
+        <div id="team-result"></div>
+    </div>
+
+    <script src="p2.js"></script>
+</body>
+</html>
